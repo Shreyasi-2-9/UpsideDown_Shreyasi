@@ -2,7 +2,11 @@ node_modules/
 dist/
 build/
 .cache/
-.env*
+.env
+.env.local
+.env.*.local
+!.env.example
+!*.env.example
 .vite/
 vite.config.*.timestamp-*
 *.tsbuildinfo
@@ -12,6 +16,22 @@ logs/
 .claude-replay.*
 .tmp-*
 /.figma/design-context/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.db
+*.sqlite3
+.pytest_cache/
+**/.pytest_cache/
+backend/homecare360.db
+backend/.env
 
 # Platform-managed agentplat state, not project source. In the
 # client-initiated single-repo workspace layout (make's `Path: "."` spec) the
